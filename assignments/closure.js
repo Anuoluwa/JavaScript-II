@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function addition(x) {
+  return function(y) {
+    return x + y;
+  };
+}
 
+var add5 = addition(5);
+var add10 = addition(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
